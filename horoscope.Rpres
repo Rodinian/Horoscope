@@ -1,0 +1,57 @@
+Simple app to tell your Horoscop
+========================================
+author: Rod
+date: 2015-04-25
+
+Introduction
+========================================
+
+
+- Some people believe in that their birth day will effect their fate
+- Such kind of relationship is Horoscope
+- Enter your name and birth-day, this app can give you some advice of your life.
+
+Input of this app
+========================================================
+In the UI.r, use such code to got the needed input
+```{r,eval=FALSE}
+    
+    sidebarPanel(textInput('id1','Name', 'Enter a name, like Bob'),
+    dateInput("date", "Date of birth"),
+    submitButton('Tell me of Fate')
+    )
+```
+
+
+Predict Algorithm
+========================================================
+- In the Sever.r, `hor(date)` is used to determine the horosope.
+- In the function the "if structure"" was used
+- It looks like code blow:
+```{r}
+date<-as.Date("04/26/15","%m/%d/%y")
+m= format(date, "%m") 
+d= format(date, "%d") 
+if (m=="04"){
+        if (d>="20"){
+            h= 'Taurus'
+        }
+    }
+```
+
+Output
+========================================================
+In the UI.r, use such code to display the output
+```{r,eval=FALSE}
+mainPanel(
+        h3('Illustrating outputs'),
+        h4('your name is'), 
+        verbatimTextOutput("oid1"), 
+        h4('your Birth day is'), 
+        verbatimTextOutput("odate"), 
+        h4('key word of your fate'),
+        verbatimTextOutput("oid2")
+        
+    )
+```
+

@@ -1,0 +1,424 @@
+1
+00:00:01,530 --> 00:00:04,170
+Hi, my name is Brian Caffo and, I'm in the
+Department of
+
+2
+00:00:04,170 --> 00:00:08,570
+Biostatistics at the Bloomberg School of
+Public Health at Johns Hopkins University.
+
+3
+00:00:08,570 --> 00:00:12,730
+And this is the Coursera data science
+specialization class on RStudio Presenter.
+
+4
+00:00:12,730 --> 00:00:18,630
+This class is co-taught with my
+instructors, Jeff Leek and Roger Peng.
+
+5
+00:00:18,630 --> 00:00:19,040
+Okay.
+
+6
+00:00:19,040 --> 00:00:20,680
+So what is RStudio Presenter?
+
+7
+00:00:20,680 --> 00:00:23,404
+Let me get a nice high lighter here.
+
+8
+00:00:23,404 --> 00:00:26,672
+So RStudio created this authoring tool so
+that
+
+9
+00:00:26,672 --> 00:00:31,558
+you can create reproducible presentations
+within their environment.
+
+10
+00:00:31,558 --> 00:00:34,054
+And basically if you're familiar with
+slidify, then,
+
+11
+00:00:34,054 --> 00:00:36,230
+you should have zero effort for picking
+this up.
+
+12
+00:00:36,230 --> 00:00:38,370
+And if you're not familiar with slidify, I
+think
+
+13
+00:00:38,370 --> 00:00:40,980
+this is probably a little bit easier to
+learn.
+
+14
+00:00:40,980 --> 00:00:43,708
+So, just like Slidify code is author,
+authored in a
+
+15
+00:00:43,708 --> 00:00:47,450
+generalized mark down format that allows
+for R code chunks.
+
+16
+00:00:47,450 --> 00:00:49,310
+And the ultimate output is an html5
+
+17
+00:00:49,310 --> 00:00:51,680
+presentation that you view in a web
+browser.
+
+18
+00:00:52,962 --> 00:00:56,306
+The file index for the presenter file is,
+has
+
+19
+00:00:56,306 --> 00:01:01,501
+a .Rpres extension instead of .md .r mark
+down Extension
+
+20
+00:01:01,501 --> 00:01:04,192
+like and slidify and then there's a lot of
+
+21
+00:01:04,192 --> 00:01:06,883
+GUI tools, and we will go through them in,
+the
+
+22
+00:01:06,883 --> 00:01:09,919
+environment that you can use that makes,
+you know,
+
+23
+00:01:09,919 --> 00:01:12,610
+this quite nice, if you like to use GUI
+tools,
+
+24
+00:01:12,610 --> 00:01:14,749
+and maybe if you like to do a lot of
+
+25
+00:01:14,749 --> 00:01:18,200
+command lines stuff maybe slidify would be
+better for you.
+
+26
+00:01:19,520 --> 00:01:20,020
+Okay.
+
+27
+00:01:21,490 --> 00:01:28,290
+So the guide that you probably want to
+follow is, on this link right here.
+
+28
+00:01:28,290 --> 00:01:30,660
+Go to that guide, it's, very good.
+
+29
+00:01:30,660 --> 00:01:33,966
+Most of this content is just taken from
+that link and I, created this
+
+30
+00:01:33,966 --> 00:01:38,866
+presentation in, RStudio Presenter so you
+could get a sense what it looks like.
+
+31
+00:01:38,866 --> 00:01:43,696
+The Quick start is just you do File, and
+then New File then R presentation and if
+
+32
+00:01:43,696 --> 00:01:49,252
+you're you know, keystroke junkie, then
+that's just Alt-f, then f, then p.
+
+33
+00:01:49,252 --> 00:01:51,124
+And then you just start using
+
+34
+00:01:51,124 --> 00:01:54,530
+Slidify/knitr style Cmd for authoring
+content.
+
+35
+00:01:54,530 --> 00:01:56,210
+They walk you through they, they have all
+
+36
+00:01:56,210 --> 00:01:57,739
+these things that will help walk you
+through it.
+
+37
+00:01:58,970 --> 00:02:01,810
+You know, so, single quotes for inline
+code.
+
+38
+00:02:01,810 --> 00:02:03,580
+Triple quotes for block code.
+
+39
+00:02:03,580 --> 00:02:07,880
+And, same options as, you know, for code
+evaluation catch.
+
+40
+00:02:09,060 --> 00:02:09,270
+Okay.
+
+41
+00:02:09,270 --> 00:02:14,330
+So here's my, presentation that I was
+working on, for today.
+
+42
+00:02:14,330 --> 00:02:17,310
+And, you can see here in the preview pane
+here.
+
+43
+00:02:17,310 --> 00:02:22,715
+Here's the The preview what I could, do,
+is if I wanted to,
+
+44
+00:02:22,715 --> 00:02:27,000
+I could pop this whole thing out into a
+oh, where am I at?
+
+45
+00:02:27,000 --> 00:02:28,860
+There we go, into a bigger
+
+46
+00:02:30,940 --> 00:02:31,730
+bigger screen.
+
+47
+00:02:31,730 --> 00:02:36,898
+If you, click on this button over here
+more, it'll, show that you can
+
+48
+00:02:36,898 --> 00:02:42,119
+view it in the browser, you can save it as
+a web page, you can publish it to RPubs.
+
+49
+00:02:43,144 --> 00:02:46,724
+This clears the cache, from the R Code
+that you ran.
+
+50
+00:02:46,724 --> 00:02:48,940
+and, you know, this navigates through.
+
+51
+00:02:48,940 --> 00:02:51,550
+Then, if you're at a slide that you want,
+and you click on Edit.
+
+52
+00:02:51,550 --> 00:02:54,580
+It brings you to that, location in the
+slide over there.
+
+53
+00:02:56,830 --> 00:02:59,190
+okay, so let's just show you how to, how
+to get started.
+
+54
+00:02:59,190 --> 00:03:01,855
+So you would just go to File > New File.
+
+55
+00:03:01,855 --> 00:03:05,410
+New file > R Presentation.
+
+56
+00:03:05,410 --> 00:03:06,770
+And then it, it creates one.
+
+57
+00:03:06,770 --> 00:03:10,774
+And I'll just create one called [SOUND]
+test.
+
+58
+00:03:10,774 --> 00:03:13,086
+Okay.
+
+59
+00:03:13,086 --> 00:03:14,770
+There it is.
+
+60
+00:03:14,770 --> 00:03:15,850
+Okay.
+
+61
+00:03:15,850 --> 00:03:23,085
+And so now, if I say this is my, my test
+presentation.
+
+62
+00:03:23,085 --> 00:03:26,340
+[SOUND] Brian Caffo [SOUND] and the date
+is, I
+
+63
+00:03:26,340 --> 00:03:30,121
+don't know let's just put the R date in
+there.
+
+64
+00:03:30,121 --> 00:03:33,055
+So we'll just do date [SOUND] like that.
+
+65
+00:03:33,055 --> 00:03:33,977
+Okay.
+
+66
+00:03:33,977 --> 00:03:36,600
+And then when I save it, watch what
+happens.
+
+67
+00:03:36,600 --> 00:03:40,690
+It compiles it, my test presentation,
+Brian Caffo, puts the date in there.
+
+68
+00:03:40,690 --> 00:03:40,800
+Okay.
+
+69
+00:03:40,800 --> 00:03:47,280
+Then you can see how the, authoring looks
+an awful lot like just ordinary old.
+
+70
+00:03:47,280 --> 00:03:50,080
+Mark down or Slidify like we've done
+before.
+
+71
+00:03:50,080 --> 00:03:59,200
+You can see right here, where you have
+some separated out R code.
+
+72
+00:03:59,200 --> 00:04:01,246
+So look, it'll look like that where it
+
+73
+00:04:01,246 --> 00:04:03,680
+reproduces the code and then puts it in
+there.
+
+74
+00:04:03,680 --> 00:04:07,290
+You know, and of course it takes the same
+subset of commands as Knitter and Slidify.
+
+75
+00:04:07,290 --> 00:04:09,980
+So if I did echo equals false.
+
+76
+00:04:09,980 --> 00:04:13,347
+Right, and then save it, it reruns it, and
+
+77
+00:04:13,347 --> 00:04:18,034
+there now, it's no longer, echoing the,
+Cmd, okay?
+
+78
+00:04:18,034 --> 00:04:20,047
+And then, it shows you how you can, add
+
+79
+00:04:20,047 --> 00:04:22,740
+in plots, and that sort of, that's sort of
+thing.
+
+80
+00:04:22,740 --> 00:04:24,667
+So during this presentation what I'm just
+going to
+
+81
+00:04:24,667 --> 00:04:26,910
+go through, is all the options you can go.
+
+82
+00:04:26,910 --> 00:04:31,950
+These, these equal signs separate the
+slides.
+
+83
+00:04:31,950 --> 00:04:33,990
+You actually only need three of them,
+right?
+
+84
+00:04:33,990 --> 00:04:37,360
+So if I do that, it, gives me that.
+
+85
+00:04:37,360 --> 00:04:40,151
+But I take away down to two, it messes up,
+right?
+
+86
+00:04:40,151 --> 00:04:42,680
+Okay, so, you need three of them.
+
+87
+00:04:42,680 --> 00:04:45,958
+And it gives the correct, correct slide
+transition.
+
+88
+00:04:45,958 --> 00:04:48,856
+Okay, but, another, and, so it's a, and
+then
+
+89
+00:04:48,856 --> 00:04:51,823
+if you want help by the way, Markdown
+Markdown
+
+90
+00:04:51,823 --> 00:04:54,790
+Quick Reference, you can click on that
+right there
+
+91
+00:04:54,790 --> 00:04:58,330
+and just see, your Markdown Quick
+Reference right there.
+
